@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¡Gracias! · Bruno Carlutti</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/brand/monograma.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Pegar acá los mismos snippets de Meta Pixel y GA4 que en index.html -->
+</head>
+<body>
+  <header class="barra">
+    <div class="contenedor barra__inner">
+      <a href="index.html" class="logo"><img src="assets/brand/monograma.svg" alt="" width="34" height="34"><span class="logo__texto">bruno carlutti</span></a>
+    </div>
+  </header>
+
+  <main class="simple cuadriculado">
+    <div class="contenedor">
+      <p class="etiqueta">Pago confirmado</p>
+      <h1>¡Ya estás adentro! <span class="resaltado">Bienvenido.</span></h1>
+      <p class="bajada">Gracias por confiar. Estos son tus próximos pasos:</p>
+      <ol class="lista-pasos">
+        <li><div><strong>Revisá tu mail.</strong> En unos minutos te llega el acceso a la guía y al pack de recursos (fijate en spam o promociones).</div></li>
+        <li><div><strong>Escribime por WhatsApp</strong> con tu nombre y tu carrera, así te sumo al soporte.</div></li>
+        <li><div><strong>Empezá por el Módulo 1</strong> este fin de semana. Con eso ya tenés tu semana organizada.</div></li>
+      </ol>
+      <a class="boton boton--resaltador" href="https://wa.me/5490000000000?text=Hola%20Bruno%2C%20compr%C3%A9%20la%20Gu%C3%ADa%20Universitaria" rel="noopener">Escribirme por WhatsApp <span class="flecha" aria-hidden="true">→</span></a>
+      <p style="margin-top:16px"><span class="pendiente">A completar: número de WhatsApp</span></p>
+    </div>
+  </main>
+
+  <footer class="pie tema-oscuro" style="padding-bottom:40px">
+    <div class="contenedor pie__inner">
+      <span>© <span data-anio>2026</span> Bruno Carlutti</span>
+      <nav aria-label="Legales"><a href="terminos.html">Términos</a><a href="privacidad.html">Privacidad</a></nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Registra la compra (Meta "Purchase" / GA4 "purchase").
+    // Para evitar duplicados al recargar, solo se dispara si Mercado Pago devolvió un pago aprobado.
+    (function () {
+      var q = new URLSearchParams(location.search);
+      if (q.get("status") === "approved" || q.get("collection_status") === "approved") {
+        window.bcTrack && window.bcTrack("Purchase", { content_name: "Guía Universitaria", value: 17000, currency: "ARS", transaction_id: q.get("payment_id") || undefined });
+      }
+    })();
+  </script>
+</body>
+</html>

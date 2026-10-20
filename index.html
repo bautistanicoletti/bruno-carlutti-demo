@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bruno Carlutti · Guía Universitaria</title>
+  <meta name="description" content="Soy Bruno, estudiante de Ingeniería en Sistemas en la UTN FRC. Promocioné todas las materias de primer año sin dejar de entrenar, salir y emprender. Este es el sistema que usé.">
+  <meta name="theme-color" content="#F5F1E8">
+
+  <!-- Open Graph / compartir en WhatsApp e Instagram -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Guía Universitaria · Bruno Carlutti">
+  <meta property="og:description" content="Promocioná la facu sin dejar de vivir. El sistema que usé para promocionar 9 de 9 materias en primer año.">
+  <meta property="og:image" content="https://bautistanicoletti.github.io/bruno-carlutti-demo/assets/img/podio.jpg">
+  <meta property="og:url" content="https://bautistanicoletti.github.io/bruno-carlutti-demo/"><!-- A completar: imagen 1200×630 con la marca y la URL absoluta del dominio final -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/brand/monograma.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- =====================================================================
+       MEDICIÓN (desactivada en la demo)
+       1) Meta Pixel: reemplazar PIXEL_ID y descomentar.
+       2) GA4: reemplazar G-XXXXXXXXXX y descomentar.
+       Eventos que ya dispara assets/js/main.js:
+         - ViewContent      → cuando se ve la sección de oferta
+         - InitiateCheckout → clic en cualquier botón de pago
+         - Purchase         → en gracias.html
+       En Mercado Pago, configurar la URL de retorno (back_url / "Redirigir
+       después del pago") apuntando a /gracias.html para registrar la compra.
+       ===================================================================== -->
+  <!--
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID'); fbq('track', 'PageView');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+</head>
+<body>
+
+  <!-- ============ BARRA ============ -->
+  <header class="barra">
+    <div class="contenedor barra__inner">
+      <a href="#inicio" class="logo" aria-label="Bruno Carlutti, inicio">
+        <img src="assets/brand/monograma.svg" alt="" width="34" height="34">
+        <span class="logo__texto">bruno carlutti</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#guia">La guía</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+      </nav>
+      <a href="#oferta" class="boton">Quiero la guía <span class="flecha" aria-hidden="true">→</span></a>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ============ HERO ============ -->
+    <section class="seccion hero cuadriculado">
+      <div class="contenedor hero__grid">
+        <div>
+          <p class="etiqueta">Para estudiantes ambiciosos</p>
+          <h1>Promocioná la facu <span class="resaltado">sin dejar de vivir.</span></h1>
+          <p class="bajada">
+            Soy Bruno, estudio Ingeniería en Sistemas en la UTN&nbsp;FRC. Promocioné todas las materias de primer año
+            mientras entrenaba, salía con amigos y emprendía. En esta guía te paso el sistema exacto que usé.
+          </p>
+          <div class="hero__acciones">
+            <a href="#oferta" class="boton boton--resaltador">Quiero la guía <span class="flecha" aria-hidden="true">→</span></a>
+            <a href="#guia" class="enlace">Ver qué incluye</a>
+          </div>
+        </div>
+
+        <div class="aparece">
+          <div class="boletin" role="figure" aria-label="Notas reales de primer año de Bruno en la UTN FRC">
+            <div class="boletin__barra">
+              <span class="punto"></span><span class="punto"></span><span class="punto"></span>
+              <span class="mono">primer_año.utn</span>
+            </div>
+            <table>
+              <tbody>
+                <tr class="diez"><td>Algoritmos y Estructuras de Datos</td><td><span>10</span></td></tr>
+                <tr><td>Física I</td><td>9</td></tr>
+                <tr><td>Arquitectura de Computadoras</td><td>9</td></tr>
+                <tr><td>Ingeniería y Sociedad</td><td>9</td></tr>
+                <tr><td>Análisis Matemático I</td><td>9</td></tr>
+                <tr><td>Álgebra y Geometría Analítica</td><td>9</td></tr>
+                <tr><td>Sistemas y Procesos de Negocio</td><td>9</td></tr>
+                <tr><td>Lógica y Estructuras Discretas</td><td>9</td></tr>
+                <tr><td>Inglés I</td><td>9</td></tr>
+              </tbody>
+            </table>
+            <div class="boletin__pie"><span>promedio</span><strong>9,11</strong></div>
+            <span class="sello">9/9 promocionadas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Franja de credibilidad -->
+    <div class="franja" aria-label="Datos de Bruno">
+      <div class="franja__pista">
+        <span>Ing. en Sistemas · UTN FRC</span>
+        <span>9 de 9 materias promocionadas</span>
+        <span>Promedio 9,11 en 1er año</span>
+        <span>Entreno · Salgo · Emprendo</span>
+        <span>Canal de YouTube</span>
+        <!-- duplicado para la marquesina continua -->
+        <span aria-hidden="true">Ing. en Sistemas · UTN FRC</span>
+        <span aria-hidden="true">9 de 9 materias promocionadas</span>
+        <span aria-hidden="true">Promedio 9,11 en 1er año</span>
+        <span aria-hidden="true">Entreno · Salgo · Emprendo</span>
+        <span aria-hidden="true">Canal de YouTube</span>
+      </div>
+    </div>
+
+    <!-- ============ PROBLEMA ============ -->
+    <section class="seccion tema-oscuro cuadriculado" id="problema">
+      <div class="contenedor">
+        <p class="etiqueta">El problema</p>
+        <h2 class="titulo-seccion aparece">“En la facu apenas tenés tiempo libre.”</h2>
+        <ul class="mitos aparece">
+          <li>Estar todo el día encerrado estudiando.</li>
+          <li>Tener miedo de decepcionar a mis viejos si me iba mal.</li>
+          <li>No poder ver a mis amigos cuando quería.</li>
+        </ul>
+        <p class="giro aparece">Tenía que haber una forma <span class="resaltado">más inteligente</span>, no más sacrificada.</p>
+        <div class="historia aparece">
+          <p>
+            Me propuse armar un sistema para sacar el relleno, aprobar en menos tiempo y dejar de vivir encerrado.
+            Junté en un solo lugar todo lo que aprendí en libros, cursos y mentorías, y lo probé en mi propio primer año.
+          </p>
+          <p><strong>Funcionó: promocioné todo y viví el mejor año de mi vida.</strong> Ahora te lo paso ordenado, paso a paso.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="seccion" id="sobre-mi">
+      <div class="contenedor sobre__grid">
+        <div class="aparece">
+          <p class="etiqueta">Sobre mí</p>
+          <h2 class="titulo-seccion">No soy un genio. <span class="resaltado">Tengo un sistema.</span></h2>
+          <p class="bajada">
+            Soy Bruno Carlutti, estudiante de Ingeniería en Sistemas en la UTN Córdoba. Durante mi primer año entrené,
+            salí con amigos, arranqué mis proyectos y, aun así, promocioné todas las materias.
+          </p>
+          <p class="bajada">
+            En mi canal de YouTube comparto lo que me sirvió. La guía es la versión completa y ordenada de ese método.
+          </p>
+          <div class="datos">
+            <div class="dato dato--acento"><strong>9/9</strong><span>materias promocionadas en 1er año</span></div>
+            <div class="dato"><strong>9,11</strong><span>de promedio general</span></div>
+            <div class="dato"><strong>UTN</strong><span>Ing. en Sistemas, Facultad Regional Córdoba</span></div>
+            <div class="dato"><strong><span class="pendiente">A completar</span></strong><span>suscriptores en YouTube</span></div>
+          </div>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="enlace">Ver mi canal de YouTube ↗</a>
+        </div>
+
+        <div class="bento aparece" aria-label="Fotos de Bruno">
+          <figure class="b-1"><img src="assets/img/cascada.jpg" alt="Bruno con amigos en una cascada de las sierras" width="242" height="368" loading="lazy"><figcaption>Sierras</figcaption></figure>
+          <figure class="b-2"><img src="assets/img/podio.jpg" alt="Bruno en el podio de una competencia deportiva" width="210" height="268" loading="lazy"><figcaption>Entreno</figcaption></figure>
+          <figure class="b-3"><img src="assets/img/amigos-noche.jpg" alt="Bruno con amigos a la noche" width="210" height="152" loading="lazy"><figcaption>Amigos</figcaption></figure>
+          <figure class="b-5"><img src="assets/img/kayak.jpg" alt="Bruno y amigos en tabla de paddle en un río" width="276" height="134" loading="lazy"></figure>
+          <figure class="b-6"><img src="assets/img/fiesta.jpg" alt="Bruno con amigos en una fiesta" width="242" height="294" loading="lazy"><figcaption>Vida social</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LA GUÍA ============ -->
+    <section class="seccion tema-oscuro" id="guia">
+      <div class="contenedor">
+        <p class="etiqueta">La Guía Universitaria</p>
+        <h2 class="titulo-seccion aparece">Un sistema en dos fases para <span class="resaltado">disfrutar la facu.</span></h2>
+        <p class="bajada aparece">Resuelve los dos problemas de todo estudiante ambicioso: rendir bien y no perderse los mejores años de su vida.</p>
+
+        <div class="fases">
+          <article class="fase fase--activa aparece">
+            <div class="fase__cabecera">
+              <span class="etiqueta" style="margin:0">Fase 1 · Académico</span>
+              <span class="estado estado--ok">Disponible hoy</span>
+            </div>
+            <h3>Estudiá menos, rendí mejor.</h3>
+            <p class="fase__dolor">“Siento que no soy tan inteligente como el resto.”</p>
+            <p>
+              El problema no es tu capacidad: es cómo usás tu tiempo y la creencia de que aprobar requiere sufrir.
+              Vas a pasar del caos a una estructura clara, con métodos para aprender más en menos horas y llegar a cada
+              parcial preparado para promocionar.
+            </p>
+            <ul class="modulos">
+              <li><span class="mono">M_01</span><div><strong>El sistema base</strong><small>Organizar la semana y el cuatrimestre</small></div></li>
+              <li><span class="mono">M_02</span><div><strong>Estudiar con método</strong><small>Técnicas para aprender más rápido</small></div></li>
+              <li><span class="mono">M_03</span><div><strong>Clases y apuntes</strong><small>Sacarle el jugo a la cursada</small></div></li>
+              <li><span class="mono">M_04</span><div><strong>Parciales y promoción</strong><small>Cómo preparar cada examen</small></div></li>
+              <li><span class="mono">M_05</span><div><strong>Energía y hábitos</strong><small>Sueño, foco y constancia</small></div></li>
+            </ul>
+            <p style="margin:16px 0 0"><span class="pendiente">Títulos tentativos · A completar</span></p>
+          </article>
+
+          <article class="fase aparece">
+            <div class="fase__cabecera">
+              <span class="etiqueta" style="margin:0">Fase 2 · Lifestyle</span>
+              <span class="estado estado--pronto">Próximamente · incluida</span>
+            </div>
+            <h3>Usá el tiempo que recuperaste.</h3>
+            <p class="fase__dolor">“Vivo encerrado en casa sin hacer nada.”</p>
+            <p>
+              El problema no es la carrera: es creer que para recibirte tenés que sacrificar tu juventud. Con el tiempo que
+              liberás en la Fase 1, vas a emprender, sumar hobbies y conocer gente increíble.
+            </p>
+            <ul class="modulos">
+              <li><span class="mono">M_06</span><div><strong>Emprender en la facu</strong><small>Arrancar tus propios proyectos</small></div></li>
+              <li><span class="mono">M_07</span><div><strong>Entrenamiento y hobbies</strong><small>Hacer lugar para lo que te gusta</small></div></li>
+              <li><span class="mono">M_08</span><div><strong>Vida social</strong><small>Conocer gente y crear anécdotas</small></div></li>
+            </ul>
+            <p style="margin:16px 0 0"><span class="pendiente">Títulos tentativos · A completar</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO FUNCIONA ============ -->
+    <section class="seccion cuadriculado" id="como-funciona">
+      <div class="contenedor">
+        <p class="etiqueta">Cómo funciona</p>
+        <h2 class="titulo-seccion aparece">De pagar a estudiar <span class="resaltado">en 5 minutos.</span></h2>
+        <div class="pasos">
+          <div class="paso aparece">
+            <span class="paso__num">PASO_01</span>
+            <h3>Pagás con Mercado Pago</h3>
+            <p>Tarjeta, débito, dinero en cuenta o efectivo. Pago seguro y en pesos.</p>
+          </div>
+          <div class="paso aparece">
+            <span class="paso__num">PASO_02</span>
+            <h3>Recibís el acceso al instante</h3>
+            <p>Te llega un mail con el acceso a la guía y al pack de recursos. <span class="pendiente">Plataforma a definir</span></p>
+          </div>
+          <div class="paso aparece">
+            <span class="paso__num">PASO_03</span>
+            <h3>Me escribís por WhatsApp</h3>
+            <p>Tenés mi número personal para sacarte dudas y destrabar tu caso puntual.</p>
+          </div>
+        </div>
+        <div class="formatos aparece">
+          <span class="chip">PDF</span><span class="chip">Videos</span><span class="chip">Plantillas</span><span class="chip">Prompts</span>
+          <span class="pendiente">Formato a confirmar</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIOS ============ -->
+    <section class="seccion" id="testimonios" style="background:var(--papel-2)">
+      <div class="contenedor">
+        <p class="etiqueta">Lo que dicen</p>
+        <h2 class="titulo-seccion aparece">Estudiantes que ya lo aplican.</h2>
+        <div class="testimonios">
+          <figure class="testimonio aparece">
+            <blockquote>“Pasé de estudiar todo el finde a tener los sábados libres. Promocioné Análisis I por primera vez.”</blockquote>
+            <footer><span class="avatar">M</span><div><strong>Nombre Apellido</strong><span>Ing. Industrial · UTN</span></div></footer>
+          </figure>
+          <figure class="testimonio aparece">
+            <blockquote>“Lo que más me sirvió fue el sistema para organizar la semana. Ahora entreno 4 veces y llego a todo.”</blockquote>
+            <footer><span class="avatar">L</span><div><strong>Nombre Apellido</strong><span>Medicina · UNC</span></div></footer>
+          </figure>
+          <figure class="testimonio aparece">
+            <blockquote>“Le escribí a Bruno por WhatsApp antes de un parcial y me ordenó la cabeza en 10 minutos.”</blockquote>
+            <footer><span class="avatar">T</span><div><strong>Nombre Apellido</strong><span>Sistemas · UTN FRC</span></div></footer>
+          </figure>
+        </div>
+        <p class="aviso-pendiente"><span class="pendiente">A completar</span> Textos de ejemplo: reemplazar por testimonios reales (capturas de WhatsApp o videos cortos de compradores).</p>
+      </div>
+    </section>
+
+    <!-- ============ OFERTA ============ -->
+    <section class="seccion tema-oscuro cuadriculado" id="oferta">
+      <div class="contenedor oferta__grid">
+        <div class="aparece">
+          <p class="etiqueta">Precio de preventa</p>
+          <h2 class="titulo-seccion">Entrá hoy y <span class="resaltado">pagá menos.</span></h2>
+          <p class="bajada">
+            La guía está en preventa: accedés ya a la Fase 1 completa y recibís la Fase 2 sin pagar de más cuando salga.
+            Cuando se lance la versión final, el precio sube a $27.000.
+          </p>
+          <p class="bajada">Si la aplicás y no te sirve, te devuelvo el 100%. El riesgo lo corro yo.</p>
+        </div>
+
+        <div class="ticket aparece">
+          <div class="ticket__cabecera">
+            <h3>Guía Universitaria</h3>
+            <span class="estado estado--ok">Preventa</span>
+          </div>
+          <div class="ticket__cuerpo">
+            <p class="subtitulo-lista">Al entrar hoy recibís</p>
+            <ul class="incluye">
+              <li><span class="icono" aria-hidden="true">✓</span><div><strong>Fase 1: Académico (Módulos 1 al 5)</strong><small>El sistema para estudiar menos, aprender más rápido y apuntar a la promoción.</small></div></li>
+              <li><span class="icono" aria-hidden="true">✓</span><div><strong>Soporte por WhatsApp</strong><small>Mi número personal para sacarte dudas y ayudarte con tu caso.</small></div></li>
+              <li><span class="icono" aria-hidden="true">+</span><div><strong>Bonus #1 · Pack de recursos</strong><small>Mis plantillas, prompts, resúmenes de libros y herramientas listas para usar.</small></div></li>
+            </ul>
+            <p class="subtitulo-lista">Incluido cuando salga</p>
+            <ul class="incluye">
+              <li><span class="icono icono--pronto" aria-hidden="true">⧗</span><div><strong>Fase 2: Lifestyle (Módulos 6 al 8)</strong><small>Para aprovechar el tiempo libre y disfrutar la facu al máximo.</small></div></li>
+              <li><span class="icono icono--pronto" aria-hidden="true">+</span><div><strong>Bonus #2 · Roadmap paso a paso</strong><small>El orden exacto en el que aplicar todo, para que no te pierdas.</small></div></li>
+            </ul>
+
+            <div class="precio">
+              <div class="precio__fila">
+                <span class="precio__monto">$17.000<small>ARS</small></span>
+                <span class="precio__antes tachado">$27.000</span>
+              </div>
+              <p class="precio__nota">Pago único. La preventa cierra en: <span class="pendiente">Fecha a definir</span></p>
+              <div class="cuenta" data-cierre="2026-11-30T23:59:00-03:00" aria-label="Tiempo restante de la preventa">
+                <div><strong data-d>00</strong><span>días</span></div>
+                <div><strong data-h>00</strong><span>horas</span></div>
+                <div><strong data-m>00</strong><span>min</span></div>
+                <div><strong data-s>00</strong><span>seg</span></div>
+              </div>
+              <a href="https://mpago.la/13f9q4i" class="boton boton--resaltador boton--ancho" data-track="InitiateCheckout" rel="noopener">Acceder ahora <span class="flecha" aria-hidden="true">→</span></a>
+              <p class="pago-seguro">Pago seguro con Mercado Pago</p>
+            </div>
+
+            <div class="garantia">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              <div>
+                <strong>Garantía de 10 días <span class="pendiente">Plazo a confirmar</span></strong>
+                Si en los primeros 10 días sentís que no es para vos, me escribís y te devuelvo el 100%. Sin vueltas.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="seccion" id="preguntas">
+      <div class="contenedor">
+        <p class="etiqueta">Preguntas frecuentes</p>
+        <h2 class="titulo-seccion aparece">Antes de que preguntes.</h2>
+        <div class="faq aparece">
+          <details open>
+            <summary>¿Me sirve si no estudio Sistemas o no soy de la UTN?</summary>
+            <div class="respuesta"><p>Sí. El sistema es sobre cómo organizarte, estudiar y rendir, no sobre materias puntuales. Funciona para cualquier carrera universitaria, en una facultad pública o privada.</p></div>
+          </details>
+          <details>
+            <summary>¿En qué formato viene y cómo lo recibo?</summary>
+            <div class="respuesta"><p>Apenas pagás te llega un mail con el acceso. <span class="pendiente">A completar: formato (PDF, videos, Notion) y plataforma</span></p></div>
+          </details>
+          <details>
+            <summary>¿Cuándo sale la Fase 2 y tengo que pagarla aparte?</summary>
+            <div class="respuesta"><p>No pagás nada extra: si entrás en la preventa, la Fase 2 y el Bonus #2 te llegan automáticamente cuando salgan. <span class="pendiente">A completar: fecha estimada</span></p></div>
+          </details>
+          <details>
+            <summary>¿Cómo funciona la garantía?</summary>
+            <div class="respuesta"><p>Si en los primeros 10 días sentís que no te sirve, me escribís por WhatsApp o mail y te devuelvo el 100% por Mercado Pago. No te pido explicaciones.</p></div>
+          </details>
+          <details>
+            <summary>¿Cuánto tiempo me lleva aplicarlo?</summary>
+            <div class="respuesta"><p>La idea es justamente que estudies menos horas. Podés leer la Fase 1 en un fin de semana y empezar a aplicar el sistema la semana siguiente. <span class="pendiente">A validar</span></p></div>
+          </details>
+          <details>
+            <summary>¿Puedo pagar en cuotas?</summary>
+            <div class="respuesta"><p>Sí, Mercado Pago te muestra las cuotas disponibles según tu tarjeta al momento de pagar.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CIERRE ============ -->
+    <section class="seccion tema-oscuro cuadriculado cierre">
+      <div class="contenedor">
+        <p class="etiqueta">Última cosa</p>
+        <h2 class="aparece">Los mejores años no se <span class="resaltado">repiten.</span></h2>
+        <p class="bajada aparece">Podés pasarlos encerrado frente a un apunte, o podés tener un sistema. Vos elegís.</p>
+        <a href="#oferta" class="boton boton--resaltador aparece">Quiero la guía · $17.000 <span class="flecha" aria-hidden="true">→</span></a>
+        <div class="redes">
+          <a class="red" href="https://www.youtube.com/" target="_blank" rel="noopener">▶ YouTube</a>
+          <a class="red" href="https://www.instagram.com/" target="_blank" rel="noopener">◎ Instagram</a>
+          <a class="red" href="https://www.tiktok.com/" target="_blank" rel="noopener">♪ TikTok</a>
+          <span class="pendiente" style="align-self:center">Links a completar</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PIE ============ -->
+  <footer class="pie tema-oscuro">
+    <div class="contenedor pie__inner">
+      <a href="#inicio" class="logo"><img src="assets/brand/monograma-claro.svg" alt="" width="34" height="34"><span class="logo__texto">bruno carlutti</span></a>
+      <nav aria-label="Legales">
+        <a href="terminos.html">Términos y condiciones</a>
+        <a href="privacidad.html">Política de privacidad</a>
+        <a href="mailto:contacto@brunocarlutti.com">Contacto</a>
+      </nav>
+      <span>© <span data-anio>2026</span> Bruno Carlutti</span>
+    </div>
+  </footer>
+
+  <!-- CTA fijo en mobile -->
+  <div class="cta-fijo">
+    <a href="#oferta" class="boton boton--resaltador">Quiero la guía · $17.000 <span class="flecha" aria-hidden="true">→</span></a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
